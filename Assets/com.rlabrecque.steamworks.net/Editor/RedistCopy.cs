@@ -55,7 +55,7 @@ public class RedistCopy {
 				File.Delete(strDllPath);
 			}
 			catch (System.Exception e) {
-				Debug.LogWarning(string.Format("[Steamworks.NET] Attempted to delete an old copy of 'steam_api.dll' in the following location: '{0}', but could not due to the following exception:", strDllPath));
+				Debug.LogWarning($"[Steamworks.NET] Attempted to delete an old copy of 'steam_api.dll' in the following location: '{strDllPath}', but could not due to the following exception:");
 				Debug.LogException(e);
 			}
 		}
@@ -66,7 +66,7 @@ public class RedistCopy {
 				File.Delete(strDll64Path);
 			}
 			catch (System.Exception e) {
-				Debug.LogWarning(string.Format("[Steamworks.NET] Attempted to delete an old copy of 'steam_api64.dll' in the following location: '{0}', but could not due to the following exception:", strDll64Path));
+				Debug.LogWarning($"[Steamworks.NET] Attempted to delete an old copy of 'steam_api64.dll' in the following location: '{strDll64Path}', but could not due to the following exception:");
 				Debug.LogException(e);
 			}
 		}

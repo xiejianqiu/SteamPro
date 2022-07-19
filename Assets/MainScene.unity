@@ -269,7 +269,7 @@ GameObject:
   - component: {fileID: 1936220500}
   - component: {fileID: 1936220499}
   m_Layer: 0
-  m_Name: Steam Manage
+  m_Name: SteamManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
