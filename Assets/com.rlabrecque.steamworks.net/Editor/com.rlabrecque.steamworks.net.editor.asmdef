@@ -1,0 +1,10 @@
+{
+    "name": "com.rlabrecque.steamworks.net.editor",
+    "references": [
+        "com.rlabrecque.steamworks.net"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": []
+}
