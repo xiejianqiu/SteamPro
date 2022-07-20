@@ -24,8 +24,12 @@ public class SteamSdk
         CSteamID cSteamID = SteamUser.GetSteamID();
         AppId_t appId_t = SteamUtils.GetAppID();
         uint appId = null != appId_t ? appId_t.m_AppId : 0;
-        ulong m_SteamID = null != cSteamID? cSteamID.m_SteamID:0;
+        ulong steamId = null != cSteamID? cSteamID.m_SteamID:0;
         string gameLang = SteamApps.GetCurrentGameLanguage();
+        if (appId <= 0 || steamId <= 0) {
+            Debug.LogError("appid或SteamId不能为0");
+            return;
+        }
         //string ctryCode = SteamUtils.GetIPCountry();
         //string currency = "";
 
